@@ -11,7 +11,7 @@ public class Bejegyzes {
         this.szerzo = szerzo;
         this.tartalom = tartalom;
         this.letrejott = LocalDateTime.now();
-        this.szerkesztve = LocalDateTime.now();
+        this.szerkesztve = this.letrejott;
     }
 
     public String getSzerzo() {
@@ -31,11 +31,12 @@ public class Bejegyzes {
     }
 
     public LocalDateTime getSzerkesztve() {
-        this.szerkesztve = LocalDateTime.now();
         return szerkesztve;
     }
 
     public void setTartalom(String tartalom) {
+        this.szerkesztve = LocalDateTime.now();
+
         this.tartalom = tartalom;
     }
     public void like() {
@@ -47,7 +48,7 @@ public class Bejegyzes {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String formazottLetrejott = this.letrejott.format(formatter);
         String formazottSzerkesztve = this.szerkesztve.format(formatter);
-        if (this.letrejott.equals(this.szerkesztve)) {
+        if (!this.letrejott.equals(this.szerkesztve)) {
         return String.format( "%s - %d - %s \n" +
                 "Szerkesztve: %s \n" +
                 "%s \n",
