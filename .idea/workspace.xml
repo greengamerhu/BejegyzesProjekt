@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="604c32b3-9362-4562-802a-160ec5194552" name="Changes" comment="Initial Commit">
+    <list default="true" id="604c32b3-9362-4562-802a-160ec5194552" name="Changes" comment="toString() elkészitve">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bejegyzes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bejegyzes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664540010232</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="UML Diagramm alapján kész vannak a constructokr, a set, get -erek. &#10;+ a b feladatban lévő apróságok elkészítve">
+      <created>1664540688972</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664540688972</updated>
+    </task>
+    <task id="LOCAL-00003" summary="toString() elkészitve">
+      <created>1664541107881</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664541107881</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -67,6 +82,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="UML Diagramm alapján kész vannak a constructokr, a set, get -erek. &#10;+ a b feladatban lévő apróságok elkészítve" />
+    <MESSAGE value="toString() elkészitve" />
+    <option name="LAST_COMMIT_MESSAGE" value="toString() elkészitve" />
   </component>
 </project>
