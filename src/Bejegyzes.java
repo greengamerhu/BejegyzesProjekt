@@ -50,7 +50,7 @@ public class Bejegyzes {
         if (this.letrejott.equals(this.szerkesztve)) {
         return String.format( "%s - %d - %s \n" +
                 "Szerkesztve: %s \n" +
-                "%s",
+                "%s \n",
                 this.szerzo,
                 this.likeok,
                 formazottLetrejott,
@@ -58,7 +58,7 @@ public class Bejegyzes {
                 this.tartalom
                 );
         } else {
-            return String.format( "%s - %d - %s \n %s",
+            return String.format( "%s - %d - %s \n %s \n",
                     this.szerzo,
                     this.likeok,
                     formazottLetrejott,
