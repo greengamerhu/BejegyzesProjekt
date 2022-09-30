@@ -1,4 +1,5 @@
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Bejegyzes {
     String szerzo;
@@ -43,16 +44,28 @@ public class Bejegyzes {
 
     @Override
     public String toString() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        String formazottLetrejott = this.letrejott.format(formatter);
+        String formazottSzerkesztve = this.szerkesztve.format(formatter);
+        if (this.letrejott.equals(this.szerkesztve)) {
         return String.format( "%s - %d - %s \n" +
                 "Szerkesztve: %s \n" +
                 "%s",
                 this.szerzo,
                 this.likeok,
-                this.letrejott,
-                this.szerkesztve,
+                formazottLetrejott,
+                formazottSzerkesztve,
                 this.tartalom
+                );
+        } else {
+            return String.format( "%s - %d - %s \n %s",
+                    this.szerzo,
+                    this.likeok,
+                    formazottLetrejott,
+                     this.tartalom
+            );
+        }
 
-                )
-        ;
+
     }
 }
