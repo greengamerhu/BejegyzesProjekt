@@ -42,17 +42,58 @@ public class Main {
         likeoszto();
         bejegyzesmodosit();
 
-        for (Bejegyzes b : bejegyzesLista) {
-            System.out.println(b);
-        }
+        kiir();
+        System.out.println("--------------------------------------------------------------------------------");
+
         System.out.printf("A legnépszerübb post:\n%s ",legnepszerubb() );
+        System.out.println();
+        System.out.println("--------------------------------------------------------------------------------");
         if (legnepszerubb().getLikeok() > 35 ) {
-            System.out.println("Van olyan bejegyzés ami 35 likenál többet kapott");
+            System.out.println("Van olyan bejegyzés ami 35 like-nál többet kapott");
         } else {
             System.out.println("Nincs olyan bejegyzés ami 35 likenál többet kapott");
 
         }
+        System.out.println();
+        System.out.println("--------------------------------------------------------------------------------");
+        System.out.printf("a 15nél kevesebb like-ot kapott posztok száma: %s",tizenotnelKevesebbLike());
+        System.out.println();
+        System.out.println("--------------------------------------------------------------------------------");
+        listaSorter();
+        kiir();
 
+
+    }
+
+    private static void kiir() {
+        for (Bejegyzes b : bejegyzesLista) {
+            System.out.println(b);
+        }
+    }
+
+    private static void listaSorter() {
+        Collections.sort(bejegyzesLista, new Comparator<Bejegyzes>() {
+            @Override
+            public int compare(Bejegyzes o1, Bejegyzes o2) {
+                if (o1.getLikeok() < o2.getLikeok()) {
+                    return 1;
+                } else if (o1.getLikeok() > o2.getLikeok()) {
+                    return -1;
+                } else {
+                    return 0;
+                }
+            }
+        });
+    }
+
+    private static int tizenotnelKevesebbLike() {
+        int sum = 0;
+        for (Bejegyzes b: bejegyzesLista) {
+            if (b.getLikeok() < 15) {
+                 sum++;
+            }
+        }
+        return sum;
     }
 
     private static Bejegyzes legnepszerubb() {
