@@ -62,7 +62,20 @@ public class Main {
         listaSorter();
         kiir();
 
+        try {
+            KiirTXTbe();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
+    }
+
+    private static void KiirTXTbe() throws IOException {
+        PrintWriter printWriter =  new PrintWriter("bejegyzesek_rendezett.txt");
+        for (Bejegyzes b : bejegyzesLista) {
+            printWriter.println(b);
+        }
+        printWriter.close();
     }
 
     private static void kiir() {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="604c32b3-9362-4562-802a-160ec5194552" name="Changes" comment="3/ c kész">
+    <list default="true" id="604c32b3-9362-4562-802a-160ec5194552" name="Changes" comment="3/d kész lista rendezve, kiíratva">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -106,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664546142396</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="3/d kész lista rendezve, kiíratva">
+      <created>1664547465408</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664547465408</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +138,7 @@
     <MESSAGE value="2/e kész, kiiratás kész" />
     <MESSAGE value="3/ a,b kész" />
     <MESSAGE value="3/ c kész" />
-    <option name="LAST_COMMIT_MESSAGE" value="3/ c kész" />
+    <MESSAGE value="3/d kész lista rendezve, kiíratva" />
+    <option name="LAST_COMMIT_MESSAGE" value="3/d kész lista rendezve, kiíratva" />
   </component>
 </project>
